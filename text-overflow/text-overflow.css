@@ -1,0 +1,31 @@
+body {
+	width: 500px;
+	height: 450px;
+	margin: 0 auto;
+	text-align: center;
+	border-width: 1px;
+	border-color: #ccc;
+	border-style: solid;
+}
+div#text {
+	padding: 50px;
+}
+h2 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+p {
+	position:relative;
+	width:400px;		/* 搜索自网上的方法 */
+	height:36px;		
+	overflow:hidden;	
+}
+p::after {
+	content: "……"; 
+	bottom:0;		
+	right:0;		
+	position: absolute;
+	background-color:#fff;  
+	width: 33px;
+}

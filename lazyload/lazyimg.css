@@ -1,0 +1,95 @@
+/* reset css */
+ul,li,p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+/* general css */
+.clearfix:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/* real css */
+.container {
+    margin: 0 auto;
+    width: 800px;
+    color: #666;
+}
+.container>ul {
+    margin: 0 auto;
+    width: 220px;
+}
+.item {
+    float: left;
+    margin: 10px;
+    width: 236px;
+    border: 1px solid #aaa;
+}
+.item>a {
+    display: block;
+    height: 334px;
+    text-align: center;
+    line-height: 334px;
+}
+.item>.info {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: rgba(0,0,0,0.05);
+    text-align: left;
+}
+.title {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.title>a:hover {
+    color: blue;
+}
+.pic>.iconfont {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.pic>.iconfont:hover {
+    color: red;
+}
+.pic>.icon-see:hover {
+    color: #666;
+}
+.pic>.iconfont>i {
+    font-style: normal;
+    margin-left: 3px;
+}
+.author {
+    display: inline-block;
+    margin-top: 5px;
+}
+.author:hover {
+    text-decoration: underline;
+}
+/*回到顶部样式*/
+.go-top {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    display: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #666;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.go-top:hover {
+    background-color: #333;
+}
